@@ -32,9 +32,13 @@ public class Car extends Vehicle {
         return Objects.hash(super.hashCode(), numberOfDoors);
     }
 
+
     @Override
     public String toString() {
         return "Car{" +
+                "manufacturer='" + super.getManufacturer() + '\'' +
+                ", model='" + super.getModel() + '\'' +
+                ", constructionYear=" + super.getConstructionYear() +
                 "numberOfDoors=" + numberOfDoors +
                 '}';
     }
