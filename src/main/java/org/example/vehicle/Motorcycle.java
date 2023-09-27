@@ -44,9 +44,11 @@ public class Motorcycle extends Vehicle {
 
     @Override
     public String toString() {
-        return "Motorcycle{" +
-                "numberOfWheels=" + numberOfWheels +
-                ", typeOfMotorcycle='" + typeOfMotorcycle + '\'' +
-                '}';
+        return "Motorcycle: " +
+                "| Manufacturer = " + super.getManufacturer() +
+                "| Model = " + super.getModel() +
+                "| Construction year = " + super.getConstructionYear() +
+                "| Type of motorcycle = " + typeOfMotorcycle +
+                "| Number of wheels = " + numberOfWheels;
     }
 }
